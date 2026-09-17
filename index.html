@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vence Rey Haum | IT Student Portfolio</title>
+  <link rel="stylesheet" href="styles.css?v=20260917a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Background Animated Computer Photo System -->
+  <div class="bg-container" aria-hidden="true">
+    <div class="bg-image-layer"></div>
+    <div class="bg-scanlines"></div>
+    <div class="bg-cyber-grid"></div>
+    <div class="bg-vignette"></div>
+  </div>
+
+  <!-- Fixed Top Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">
+        <span class="brand-prompt">&gt;_</span>
+        <span class="brand-name">Vence Rey Haum</span>
+        <span class="brand-badge">BSIT 2-A</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="Haum Resume Final.pdf" download class="nav-cta-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Resume</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-layout" id="home">
+
+    <!-- Hero / Dev Terminal Section -->
+    <section class="hero-section">
+      <div class="terminal-card">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="terminal-title">user@vence-haum-terminal:~ (bash)</div>
+          <div class="terminal-status"><span class="pulse-indicator"></span> ONLINE</div>
+        </div>
+
+        <div class="terminal-body">
+          <div class="hero-profile-grid">
+
+            <!-- Left: Avatar and Quick Specs -->
+            <div class="profile-side">
+              <div class="avatar-container">
+                <div class="avatar-glow"></div>
+                <img id="profile-photo" class="avatar-img" src="ID Picture.jpg" alt="Vence Rey Haum Profile Picture">
+                <div class="avatar-status-tag">BSIT 2-A</div>
+              </div>
+
+              <div class="quick-specs-box">
+                <div class="spec-row">
+                  <span class="spec-key">Age:</span>
+                  <span class="spec-val" id="student-age">20</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-key">Location:</span>
+                  <span class="spec-val" id="student-address">Baybay-1 Poblacion Bislig City</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-key">Section:</span>
+                  <span class="spec-val highlight" id="course-year">BSIT 2-A</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-key">Institute:</span>
+                  <span class="spec-val">DLSJBC</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Bio and Action Buttons -->
+            <div class="bio-side">
+              <div class="tech-tag-row">
+                <span class="tech-chip">👨‍💻 IT Major</span>
+                <span class="tech-chip">☕ Java Developer</span>
+                <span class="tech-chip">📍 Bislig City</span>
+              </div>
+
+              <h1 class="dev-name" id="student-name">Vence Rey Haum</h1>
+              <p class="dev-subtitle"><span class="cmd-prefix">$</span> Bachelor of Science in Information Technology 2-A</p>
+
+              <p class="bio-paragraph" id="short-biography">
+                I am an Information Technology student who enjoys learning about programming, responsible, and always eager to improve my skills.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  View Featured Project
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  Get In Touch
+                </a>
+                <a href="Haum Resume Final.pdf" download class="btn btn-outline">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  Download CV
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Goals Section -->
+    <section class="content-section" id="about">
+      <div class="section-title-wrap">
+        <span class="section-index">01 //</span>
+        <h2>About &amp; Career Objective</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="tech-card">
+          <div class="card-icon">🎯</div>
+          <h3>Career Goals</h3>
+          <p id="career-goals">
+            To become a successful IT professional and develop systems that help people and businesses.
+          </p>
+        </div>
+
+        <div class="tech-card">
+          <div class="card-icon">💡</div>
+          <h3>Personal Motto</h3>
+          <blockquote class="motto-quote" id="student-motto">
+            "Success comes from hard work, perseverance, and faith in God."
+          </blockquote>
+        </div>
+
+        <div class="tech-card full-width">
+          <div class="card-icon">🤝</div>
+          <h3>Soft Skills &amp; Interpersonal Strengths</h3>
+          <div class="chips-flex" id="soft-skills"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Educational Background Section -->
+    <section class="content-section" id="education">
+      <div class="section-title-wrap">
+        <span class="section-index">02 //</span>
+        <h2>Educational Background</h2>
+      </div>
+
+      <div class="education-grid" id="education-container">
+        <!-- Injected dynamically via script.js -->
+      </div>
+    </section>
+
+    <!-- Skills Matrix Section -->
+    <section class="content-section" id="skills">
+      <div class="section-title-wrap">
+        <span class="section-index">03 //</span>
+        <h2>Technical &amp; Software Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="tech-card">
+          <div class="card-header-flex">
+            <span class="skill-category-icon">⚡</span>
+            <h3>Technical Skills</h3>
+          </div>
+          <ul class="skill-list" id="technical-skills"></ul>
+        </div>
+
+        <div class="tech-card highlight-card">
+          <div class="card-header-flex">
+            <span class="skill-category-icon">☕</span>
+            <h3>Programming Languages</h3>
+          </div>
+          <ul class="skill-list" id="programming-languages"></ul>
+        </div>
+
+        <div class="tech-card">
+          <div class="card-header-flex">
+            <span class="skill-category-icon">🎨</span>
+            <h3>Software Applications</h3>
+          </div>
+          <ul class="skill-list" id="software-applications"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Project Section -->
+    <section class="content-section" id="projects">
+      <div class="section-title-wrap">
+        <span class="section-index">04 //</span>
+        <h2>Featured Projects</h2>
+      </div>
+
+      <div class="project-showcase-grid">
+        <div class="project-tech-card">
+          <div class="project-card-header">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="file-name">StudentInformationSystem.java</span>
+            <span class="badge-status" id="featured-project-status">Completed</span>
+          </div>
+
+          <div class="project-card-content">
+            <div class="project-top-row">
+              <h3 id="featured-project-title">Student Information System</h3>
+              <span class="lang-tag" id="featured-project-language">Java</span>
+            </div>
+
+            <p class="project-desc" id="featured-project-description">
+              A web-based system for managing student records efficiently.
+            </p>
+
+            <div class="project-card-footer">
+              <div class="project-meta-details">
+                <span class="meta-item"><strong>Platform:</strong> Desktop / Web</span>
+                <span class="meta-item"><strong>Architecture:</strong> CRUD / OOP</span>
+              </div>
+              <a id="featured-project-link" href="#" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                <span>Launch Project</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="content-section" id="contact">
+      <div class="section-title-wrap">
+        <span class="section-index">05 //</span>
+        <h2>Contact Information</h2>
+      </div>
+
+      <div class="contact-grid">
+        <a class="contact-card" id="email-link" href="mailto:vencereyhaum@gmail.com">
+          <div class="contact-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">Email Address</span>
+            <strong class="contact-val" id="email-text">vencereyhaum@gmail.com</strong>
+          </div>
+          <span class="arrow-icon">&rarr;</span>
+        </a>
+
+        <a class="contact-card" href="tel:+639519693197">
+          <div class="contact-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">Mobile Number</span>
+            <strong class="contact-val" id="mobile-number">09519693197</strong>
+          </div>
+          <span class="arrow-icon">&rarr;</span>
+        </a>
+
+        <a class="contact-card" id="facebook-link" href="https://www.facebook.com/haum.rey" target="_blank" rel="noopener noreferrer">
+          <div class="contact-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">Facebook Profile</span>
+            <strong class="contact-val" id="facebook-text">haum.rey</strong>
+          </div>
+          <span class="arrow-icon">&rarr;</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Developer Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-prompt">&gt;_</span>
+        <strong>Vence Rey Haum</strong> &bull; BSIT 2-A Portfolio
+      </div>
+      <p class="footer-copy">&copy; 2026 Vence Rey Haum. All Rights Reserved.</p>
+      <p class="footer-date">Last Updated: September 18, 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js?v=20260917a"></script>
+</body>
+</html>
